@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{91956fe2-ea9a-432b-8b99-874b763dd68b}">
+		<property name="name">
+			<value>OceanAmount</value>
+		</property>
+		<relationship name="folder">
+			<destination>{796d1e7e-748a-4032-a8b8-0c4997227b1c}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{177b767e-6a58-44fc-9ed5-3ee62dab4ffc}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{177b767e-6a58-44fc-9ed5-3ee62dab4ffc}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

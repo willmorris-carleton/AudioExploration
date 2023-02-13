@@ -66,7 +66,7 @@ public class CharacterMovementController : MonoBehaviour
             footstepsInstance.stop(STOP_MODE.ALLOWFADEOUT);
         }
 
-        Debug.Log(getGroundTypeStandingOn().ToString());
+        //Debug.Log(getGroundTypeStandingOn().ToString());
         AudioManager.Instance.SetGlobalLabelParameter("GroundType", getGroundTypeStandingOn().ToString());
     }
 

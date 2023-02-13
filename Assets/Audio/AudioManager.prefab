@@ -50,3 +50,10 @@ MonoBehaviour:
       Data3: 1201478310
       Data4: 993476673
     Path: event:/SFX/Footsteps
+  seaWind:
+    Guid:
+      Data1: -474631619
+      Data2: 1202093921
+      Data3: 169447868
+      Data4: 1117770879
+    Path: event:/SFX/SeaWind

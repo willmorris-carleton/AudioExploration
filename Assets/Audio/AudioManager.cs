@@ -8,6 +8,7 @@ using FMODUnity;
 public class AudioManager : Singleton<AudioManager>
 {
     public EventReference footsteps;
+    public EventReference seaWind;
 
     List<EventInstance> eventInstances = new List<EventInstance>();
 
@@ -25,5 +26,9 @@ public class AudioManager : Singleton<AudioManager>
 
     public void SetGlobalLabelParameter(string name, string label) {
         RuntimeManager.StudioSystem.setParameterByNameWithLabel(name, label);
+    }
+
+    public void SetGlobalParameter(string name, float amount) {
+        RuntimeManager.StudioSystem.setParameterByName(name, amount);
     }
 }
