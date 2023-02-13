@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using FMOD.Studio;
+using UnityEngine.Tilemaps;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(Animator))]
 public class CharacterMovementController : MonoBehaviour
@@ -13,6 +14,11 @@ public class CharacterMovementController : MonoBehaviour
     EventInstance footstepsInstance;
     Animator animator;
     SpriteRenderer spriteRenderer;
+
+    [SerializeReference]
+    GridLayout mapGrid;
+    [SerializeReference]
+    Tilemap tilemap;
     
     void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -59,6 +65,9 @@ public class CharacterMovementController : MonoBehaviour
         else {
             footstepsInstance.stop(STOP_MODE.ALLOWFADEOUT);
         }
+
+        Debug.Log(getGroundTypeStandingOn().ToString());
+        AudioManager.Instance.SetGlobalLabelParameter("GroundType", getGroundTypeStandingOn().ToString());
     }
 
     void UpdateAnimation(bool isMoving) {
@@ -69,5 +78,20 @@ public class CharacterMovementController : MonoBehaviour
             
             animator.SetBool("isMoving", false);
         }
+    }
+
+    GroundType getGroundTypeStandingOn() {
+        TileBase tileStandingOn = tilemap.GetTile(mapGrid.WorldToCell(transform.position));
+
+        if (tileStandingOn) {
+            switch (tileStandingOn.name[0]) {
+                case 'g':
+                    return GroundType.Grass;
+                case 's':
+                    return GroundType.Sand;
+            }
+        }
+        
+        return GroundType.Sand;
     }
 }

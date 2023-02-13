@@ -22,4 +22,8 @@ public class AudioManager : Singleton<AudioManager>
             eventInstance.release();
         }
     }
+
+    public void SetGlobalLabelParameter(string name, string label) {
+        RuntimeManager.StudioSystem.setParameterByNameWithLabel(name, label);
+    }
 }
