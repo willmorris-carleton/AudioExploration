@@ -11,11 +11,14 @@ public class OceanSoundController : MonoBehaviour
     public float radius = 3.0f;
     
     EventInstance windInstance;
+    EventInstance birdCawsInstance;
     
     // Start is called before the first frame update
     void Start() {
         windInstance = AudioManager.Instance.CreateEventInstance(AudioManager.Instance.seaWind);
         windInstance.start();
+        birdCawsInstance = AudioManager.Instance.CreateEventInstance(AudioManager.Instance.birdCaws);
+        birdCawsInstance.start();
     }
 
     // Update is called once per frame

@@ -57,3 +57,10 @@ MonoBehaviour:
       Data3: 169447868
       Data4: 1117770879
     Path: event:/SFX/SeaWind
+  birdCaws:
+    Guid:
+      Data1: 431386539
+      Data2: 1294427955
+      Data3: -1371131234
+      Data4: 1575538411
+    Path: event:/SFX/BirdCaws

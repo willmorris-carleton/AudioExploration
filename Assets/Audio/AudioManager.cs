@@ -9,6 +9,7 @@ public class AudioManager : Singleton<AudioManager>
 {
     public EventReference footsteps;
     public EventReference seaWind;
+    public EventReference birdCaws;
 
     List<EventInstance> eventInstances = new List<EventInstance>();
 

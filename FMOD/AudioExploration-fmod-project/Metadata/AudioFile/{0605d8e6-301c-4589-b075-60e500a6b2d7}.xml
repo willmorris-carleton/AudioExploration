@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{0605d8e6-301c-4589-b075-60e500a6b2d7}">
+		<property name="assetPath">
+			<value>491296__jessica190091__leaves-rustling-from-wind-or-a-person-owi.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>29.665333333333333</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{92032faf-bf17-41e4-8902-f79d95e31b15}</destination>
+		</relationship>
+	</object>
+</objects>
