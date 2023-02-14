@@ -64,3 +64,10 @@ MonoBehaviour:
       Data3: -1371131234
       Data4: 1575538411
     Path: event:/SFX/BirdCaws
+  mainSong:
+    Guid:
+      Data1: 250932377
+      Data2: 1202915934
+      Data3: -2018656081
+      Data4: 980260644
+    Path: event:/Music/MainSong
