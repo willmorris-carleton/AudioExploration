@@ -89,6 +89,8 @@ public class CharacterMovementController : MonoBehaviour
                     return GroundType.Grass;
                 case 's':
                     return GroundType.Sand;
+                case 'w':
+                    return GroundType.Water;
             }
         }
         
