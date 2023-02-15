@@ -9,6 +9,7 @@ public class OceanSoundController : MonoBehaviour
     [SerializeReference]
     Transform playerTransform;
 
+    public bool debug = false;
     [SerializeReference]
     TextMeshProUGUI debugText;
     
@@ -26,6 +27,8 @@ public class OceanSoundController : MonoBehaviour
         birdCawsInstance.start();
         mainSongInstance = AudioManager.Instance.CreateEventInstance(AudioManager.Instance.mainSong);
         mainSongInstance.start();
+
+        if (debug) debugText.enabled = true;
     }
 
     // Update is called once per frame
@@ -35,7 +38,7 @@ public class OceanSoundController : MonoBehaviour
         
         //Debug.Log(d);
         //Debug.Log(oceanAmount);
-        debugText.text = oceanAmount.ToString();
+        if (debug) debugText.text = oceanAmount.ToString();
 
         AudioManager.Instance.SetGlobalParameter("OceanAmount", oceanAmount);
     }

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{4d33de9c-1b7a-4336-bdfc-a8966971604d}">
+		<property name="assetPath">
+			<value>m_riff3b.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8.3478458049886619</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{92032faf-bf17-41e4-8902-f79d95e31b15}</destination>
+		</relationship>
+	</object>
+</objects>
