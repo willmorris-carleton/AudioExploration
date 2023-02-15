@@ -56639,7 +56639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 854446077}
   debugText: {fileID: 1615351049}
-  radius: 4.96
+  radius: 5.54
 --- !u!4 &1733869987
 Transform:
   m_ObjectHideFlags: 0
